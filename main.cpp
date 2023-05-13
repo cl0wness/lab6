@@ -192,7 +192,7 @@ bool cmpWithDicts(QString str, const QList <QList <QStringList>> dictionaries, i
         for (line = 0; line < dictionaries[dict].count() && (hit == -1); line++)
         {
             // Сравнить строку со строкой словаря
-            hit = cmpWithList(str,dictionaries[dict][line]);
+            hit = cmpWithList(str,dictionaries[dict][line]);  // commit 2 fourth_branch
         }
     }
     // Если совпадение найдено
