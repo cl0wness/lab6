@@ -196,7 +196,7 @@ bool cmpWithDicts(QString str, const QList <QList <QStringList>> dictionaries, i
         }
     }
     // Если совпадение найдено
-    if(hit != -1)
+    if(hit != -1)   // commit 3 fourth_branch
     {
         // Считать сравнение успешным
         dictPos[0] = dict-1;
