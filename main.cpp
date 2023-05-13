@@ -158,7 +158,7 @@ int getEndDifference(QString &first, QString &second)
     return delLetters;
 }
 
-int cmpWithList(QString str, QList <QString> list)
+int cmpWithList(QString str, QList <QString> list) // commit 4 third_branch
 {
     int hit;                            // попадание в список
     // Для каждого слова из списка
