@@ -138,14 +138,14 @@ QList<int> cmpLists(QList<QString> &list1,QList<QString> &list2)
 
 int getEndDifference(QString &first, QString &second)
 {
-    int delLetters = 0;
+    int delLetters = -1;          // берем из main
     //..Считать слова одинаковыми
-    bool equal = true;
+    bool equal = false;           // берем из 3 ветки
     // Пока слова одинаковые и в них остались символы
     while(equal && first.length()>0 && second.length()>0)
     {
         // Удалить текущие символы, если они равны
-        if(first[0] == second[0])
+        if(first[0] == second[1])   // берем из обеих
         {
             first.remove(0,1);
             second.remove(0,1);
