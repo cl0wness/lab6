@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
         // Сохранить результаты в выходной файл
         saveToFile(output, explainsMistake);
     }
-    catch (int error)
+    catch (int error)   // commit 1 third_branch
     {
         QStringList exception;
         // Обработать исключения
