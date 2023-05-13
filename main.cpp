@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
             throw 5;
         // Сравнить слова попарно
         QList<int> diffPairs = cmpLists(str1,str2);
-        haveMistake = !diffPairs.isEmpty();
+        haveMistake = !diffPairs.isEmpty(); // commit 4 second_branch
         // Если есть несовпадения в парах
         if(haveMistake)
         {
