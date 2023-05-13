@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     QStringList strings, explainsMistake; // предложения и объяснения ошибок
     QList <Mistake> mistakesIn; // позиции ошибок
 
+    // commit 1 main
     bool haveMistake = false; // наличие ошибок
     try
     {
