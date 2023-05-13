@@ -177,7 +177,7 @@ int cmpWithList(QString str, QList <QString> list)
         if(hit == 0)
             return i;
     }
-    return -1;
+    return -1;   // commit 1 fourth_branch
 }
 
 bool cmpWithDicts(QString str, const QList <QList <QStringList>> dictionaries, int dictPos[2])
