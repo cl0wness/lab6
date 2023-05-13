@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
     try
     {
         // Получить пути к входному и выходному файлам, если задано достаточно аргементов
-        if(comLine.arguments().size()>2)
+        if(comLine.arguments().size() > 0)      // берем из main
         {
-            input = comLine.arguments().at(1);
-            output = comLine.arguments().at(2);
+            input = comLine.arguments().at(2);  // берем из 2 ветки
+            new_output = comLine.arguments().at(2);  // берем из обеих
         }
         // Иначе - исключение 0
         else
