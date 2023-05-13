@@ -90,10 +90,10 @@ int main(int argc, char *argv[])
         }
         try {
             // Сохранить исключения в выходной файл
-            saveToFile(output, exception);
-        } catch (int error) {
+            saveToFile(output, exc);   // берем из main
+        } catch (int mainError) {      // берем из 4 ветки
             // Напечатать предупреждение, если нет доступа к выходному файлу
-            if(error == 1)
+            if(mainError == 1)         // берем из обеих
                 qWarning("Неверно указан файл для выходных данных. Возможно, указанного расположения не существует или нет прав на запись.");
         }
     }
