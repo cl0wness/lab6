@@ -38,10 +38,10 @@ int main(int argc, char *argv[])
             throw 3;
         // Перестроить отрицания в предложениях
         rearrangeNegatives(strings[0]);
-        rearrangeNegatives(strings[1]);
+        rearrangeNegatives(strings[2]);     // конфликт с 3 веткой (берем из 2 ветки)
         // Разделить предложения на слова
-        QList<QString> str1, str2;
-        separByWords(strings[0],str1);
+        QList<QString> str1, str2, str3;    // берем из 3 ветки
+        separByWords(strings[3],str1);      // берем из обеих
         separByWords(strings[1],str2);
         // Исключение 5, если в предложениях разной количество слов
         if(str1.count() != str2.count())
